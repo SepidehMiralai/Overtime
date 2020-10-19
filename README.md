@@ -2,7 +2,7 @@
 ## Key requirement: Company neds documentation that salaried employees did or did not get overtime each week
 ## Models
 - Post -> date:date rationale:text
-- User -> DEVISE
+X User -> DEVISE
 - AdminUser -> STI
 
 ## Features:
