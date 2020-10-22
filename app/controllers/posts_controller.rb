@@ -14,6 +14,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    @post.user_id = current_user.id
 
     if @post.save
       redirect_to @post, notice: "Your post was create successfully"
@@ -30,5 +31,5 @@ class PostsController < ApplicationController
   def set_post
     @post = Post.find(params[:id])
   end
-  
+
 end
