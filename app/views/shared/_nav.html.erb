@@ -8,12 +8,12 @@
 				</button> 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="navbar-nav">
-            <li class="nav-item active">
+            <li class="nav-item <% active?(root_path) %>">
                <%= link_to "Home", root_path %>   
             </li>
             &nbsp;
             &nbsp;
-            <li class="nav-item active">
+            <li class="nav-item">
             <%= link_to "Time Entries", posts_path %>  
             </li>
 					</ul>
