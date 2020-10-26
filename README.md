@@ -13,10 +13,10 @@ X AdminUser -> STI
 - Needs to be documented if employee did not log overtime
 
 ## UI
-Bootstrap -> formatting
+X Bootstrap -> formatting
 
 ## Refactor TODOS
-- Add full name method for users
+X Add full name method for users
 - Refactor user association test in post_spec
 
 
