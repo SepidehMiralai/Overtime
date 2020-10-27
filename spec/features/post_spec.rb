@@ -69,6 +69,19 @@ describe 'navigate' do
     end
   end 
 
+  describe "delete" do
+    before do
+      user = User.create(email: "test@test.com", password: "asdfasdf", password_confirmation: "asdfasdf", first_name: "Jon", last_name: "Snow")
+      login_as(user, :scope => :user)
+    end
+    it "can be deleted" do
+      post = FactoryBot.create(:post)
+      visit posts_path
+      click_link "delete_post_#{post.id}_from_index"
+      expect(page.status_code).to eq(200)
+    end
+  end
+
   describe "edit" do
     before do
       user = User.create(email: "test@test.com", password: "asdfasdf", password_confirmation: "asdfasdf", first_name: "Jon", last_name: "Snow")
