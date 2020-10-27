@@ -1,8 +1,2 @@
-<%= form_for @post do |f| %>
-  <label>Date: </label>
-  <%= f.date_field :date %><br/>
-  <label>Rationale: </label>
-  <%= f.text_area :rationale %><br/>
-
-  <%= f.submit 'Save' %> 
-<% end %>
+<h2> New </h2>
+<%= render 'form' %>
