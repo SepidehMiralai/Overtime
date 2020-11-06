@@ -4,10 +4,12 @@
 // that code so it'll be compiled.
 
 //= require jquery
-//= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap-sprockets
 //= require_tree .
+//= require gritter
+
 
 require("@rails/ujs").start()
 require("turbolinks").start()
