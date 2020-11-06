@@ -60,3 +60,6 @@ gem 'devise'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem "gritter", "1.2.0"
+gem "administrate"
+gem 'bourbon'
+
